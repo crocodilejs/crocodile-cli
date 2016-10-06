@@ -1,7 +1,7 @@
 {
   "name": "crocodile",
   "description": "CrocodileJS command line utility for starting new projects",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Nick Baugh <niftylettuce@gmail.com>",
   "bin": {
     "crocodile": "./bin/crocodile"
