@@ -46,7 +46,7 @@ crocodile
     upgrade               Upgrade your existing CrocodileJS project
     issues                Open GitHub issues for CrocodileJS
     docs                  Read CrocodileJS documentation on GitHub
-    license               Purchase a CrocodileJS license
+    license               Purchase a commercial CrocodileJS license
     rock                  I wonder what this does?
 
   Options:
