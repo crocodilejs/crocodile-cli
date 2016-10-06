@@ -55,6 +55,10 @@ crocodile
     -V, --version  output the version number
 ```
 
+## Development
+
+Because we utilize `babel` to compile the project, use `npm run watch` to recompile on file changes.
+
 
 ## License
 

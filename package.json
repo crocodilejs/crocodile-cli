@@ -60,6 +60,7 @@
     "lint": "eslint .",
     "postinstall": "./bin/crocodile",
     "preinstall": "npm run compile",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "watch": "babel -w -d lib/ src/"
   }
 }

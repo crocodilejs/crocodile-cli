@@ -45,7 +45,7 @@ export default async () => {
         console.log(`${tac} You are using an old version of CrocodileJS! Latest version is ${release.tag_name} and you are only on ${yaml.crocodile.version}!\n`);
         console.log(`View the official release and upgrade notes at: ${chalk.underline.cyan(release.html_url)}\n`);
         console.log(`${chalk.underline('After you upgrade')} you will need to update the version specified in the file ".crocodile.yml" found in the root of your CrocodileJS project.`);
-        opn(release.html_url);
+        opn(release.html_url, { wait: false });
       } else if (diff === 0) {
         // 0 = no upgrade needed
         console.log(`${tic} Your project is already using latest version of CrocodileJS.  Great work!`);

@@ -97,7 +97,7 @@ export default async (dir) => {
     // output error and open github issues
     console.log(`${tac} An error occured while cloning the repository from GitHub, please try again or file an issue with the below output:\n`);
     console.log(err && err.stack);
-    opn('https://github.com/crocodilejs/crocodile-node-mvc-framework/issues/new');
+    opn('https://github.com/crocodilejs/crocodile-node-mvc-framework/issues/new', { wait: false });
 
     exit(1);
 
