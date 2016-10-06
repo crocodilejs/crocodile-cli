@@ -16,7 +16,7 @@ console.log(`\uD83D\uDC0A  ${chalk.bold('CrocodileJS')} is a ${chalk.underline('
 program.version(pkg.version);
 
 program
-  .command('chew <dir>')
+  .command('chew <dir> [version]')
   .description('Create a new CrocodileJS project')
   .action(commands.chew);
 

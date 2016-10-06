@@ -42,12 +42,12 @@ crocodile
 
   Commands:
 
-    chew <dir>  Create a new CrocodileJS project
-    upgrade     Upgrade your existing CrocodileJS project
-    issues      Open GitHub issues for CrocodileJS
-    docs        Read CrocodileJS documentation on GitHub
-    license     Purchase a CrocodileJS license
-    rock        I wonder what this does?
+    chew <dir> [version]  Create a new CrocodileJS project
+    upgrade               Upgrade your existing CrocodileJS project
+    issues                Open GitHub issues for CrocodileJS
+    docs                  Read CrocodileJS documentation on GitHub
+    license               Purchase a CrocodileJS license
+    rock                  I wonder what this does?
 
   Options:
 

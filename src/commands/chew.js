@@ -9,7 +9,7 @@ const tic = chalk.green('✓');
 const tac = chalk.red('✗');
 const opts = { stdio: 'ignore' };
 
-export default async (dir) => {
+export default async (dir, version) => {
 
   if (!which('git')) {
     console.log(chalk.red('You are missing `git` on your system, please install it'));
@@ -45,15 +45,18 @@ export default async (dir) => {
     spinner.text = 'Pulling latest GitHub release';
     await childProcess.exec('git fetch --tags', opts);
 
-    // determine latest tag
-    spinner.text = 'Determining latest tag';
-    let tag = await childProcess.exec(
-      'git describe --tags `git rev-list --tags --max-count=1`',
-      { encoding: 'utf8' }
-    );
+    let tag = version;
+    if (!version) {
+      // determine latest tag
+      spinner.text = 'Determining latest tag';
+      tag = await childProcess.exec(
+        'git describe --tags `git rev-list --tags --max-count=1`',
+        { encoding: 'utf8' }
+      );
 
-    // trim trailing line breaks
-    tag = tag.stdout.trim();
+      // trim trailing line breaks
+      tag = tag.stdout.trim();
+    }
 
     // checkout latest tag
     spinner.text = `Downloading CrocodileJS version ${tag}`;
