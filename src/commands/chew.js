@@ -72,7 +72,7 @@ export default async (dir, version) => {
 
     // copy over the environment file for us to complete
     spinner.text = 'Copying environment file';
-    cp('.env.example', '.env');
+    cp('.env.defaults', '.env');
 
     // initialize git state on the repository clone
     spinner.text = 'Initializing new git state of repository';
